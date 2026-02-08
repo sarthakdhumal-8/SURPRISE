@@ -1,0 +1,86 @@
+body{
+margin:0;
+background: linear-gradient(135deg,#0a0015,#1a0033,#2a004d);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+font-family:Poppins;
+color:white;
+overflow-y:auto;
+padding:40px 0;
+}
+
+
+/* Container */
+.story-container{
+width:90%;
+max-width:800px;
+text-align:center;
+}
+
+/* Tap box */
+#tapBox{
+cursor:pointer;
+border:2px solid rgba(255,255,255,0.3);
+padding:40px;
+border-radius:20px;
+backdrop-filter: blur(10px);
+transition:0.4s;
+}
+
+#tapBox:hover{
+transform:scale(1.05);
+box-shadow:0 0 30px rgba(255,100,150,0.5);
+}
+
+#letterBox{
+display:none;
+margin-top:20px;
+padding:30px;
+border-radius:20px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+animation:fadeIn 1.5s ease;
+max-height:75vh;
+overflow-y:auto;
+scroll-behavior:smooth;
+}
+
+
+/* Romantic cursive text */
+#storyText{
+font-family:"Great Vibes", cursive;
+font-size:28px;
+line-height:1.8;
+text-align:left;
+min-height:200px;
+}
+
+/* Proposal Button */
+#proposalBtn{
+display:none;
+margin-top:30px;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:#ff4d88;
+color:white;
+font-size:18px;
+cursor:pointer;
+transition:0.3s;
+}
+
+#proposalBtn:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px #ff4d88;
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(30px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+*{
+box-sizing:border-box;
+}
